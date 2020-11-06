@@ -1,0 +1,6 @@
+.footer {
+    display: flex;
+    background-color: #1a1b1c;
+    justify-content: center;
+    margin-top: 80px;
+}

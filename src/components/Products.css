@@ -1,0 +1,19 @@
+.products {
+    margin-top: 150px;
+}
+
+.products__row {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.products__col {
+    text-align: center;
+}
+
+.products__col>img {
+    height: 180px;
+    width: 200px;
+}

@@ -35,7 +35,7 @@
 .navbar__eachItem {
     text-decoration: none;
     /* color: whitesmoke; */
-    color: black;
+    color: #666;
 }
 
 .navbar__small {}

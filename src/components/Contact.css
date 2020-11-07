@@ -73,8 +73,14 @@
 
 
 
+.success__message {
+    display: none;
+}
 
 
+.failure__message {
+    display: none;
+}
 
 
 

@@ -100,7 +100,7 @@ function Home() {
       />
         <div class="home__heading">
             <h1>Established in the year 2000, ‘Volt-Amp Logic Controls’ is a trusted business entity engaged in manufacturing and supplying Electronic Instruments.</h1>
-            <button className='home__whitebtn' href='/contact-us'>CONTACT US</button>
+            <a href='/contact-us'><button className='home__whitebtn' >CONTACT US</button></a>
         </div>
 
 
@@ -112,8 +112,8 @@ function Home() {
                 <div className='home__data'>
                     <div className='home__team'>
                         <h3>Volt-Amp Logic Controls</h3>
-                        <p>We are a reputed manufacturer and supplier of Process Control Electronic Instruments. High quality components and parts are used for manufacturing these instruments. Our instruments are completely digitalized and are mostly automatic. The instruments we offer are available in standard specifications at prices that are easy on the pocket.</p>
-                        <button class='home__blackbtn'>ABOUT US</button>
+                        <p> Our products have been accredited by the domain veterans for the exceptional life span and cost-effectiveness. As a sole proprietorship firm, we adhere to honest and direct business principles while making deals with our customers.</p>
+                        <a href='/about'><button  class='home__blackbtn'>ABOUT US</button></a>
                     </div>
                 </div>
             </div>
@@ -126,7 +126,7 @@ function Home() {
         <div className='homeproduct__headline'>
             <div className='home__data'>
                 <h3>Our Products</h3>
-                <p>Volt Amp Logic Controls Established in the year 2000, ‘Volt-Amp Logic Controls’ is a trusted business entity engaged in manufacturing and supplying Electronic Instruments. Our products have been accredited by the domain veterans for the exceptional life span and cost-effectiveness. As a sole proprietorship firm, we adhere to honest and direct business principles while making deals with our customers. We boost of having an advance infrastructure which enables us to accomplish all processes efficiently. The quality standards offered by us have</p>
+                <p>We are a reputed manufacturer and supplier of Process Control Electronic Instruments. High quality components and parts are used for manufacturing these instruments. Our instruments are completely digitalized and are mostly automatic. The instruments we offer are available in standard specifications at prices that are easy on the pocket.</p>
             </div>
         </div>
         <div className='home__data'>
@@ -148,7 +148,7 @@ function Home() {
                     <p>Real Time Switches</p>
                 </div>
             </div>
-                <button className='home__blackbtn'>EXPLORE OUR PRODUCTS</button>
+                <a href='products'><button className='home__blackbtn'>EXPLORE OUR PRODUCTS</button></a>
         </div>
             
 

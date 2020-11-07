@@ -6,30 +6,42 @@ import MailIcon from '@material-ui/icons/Mail';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
-import Snackbar from '@material-ui/core/Snackbar';
 import contactSide from './photos/contactSide.jpg';
 import emailjs from 'emailjs-com';
 
+// function validateForm() {
+//     var name = document.forms["myForm"]["name"].value;
+//     // var email = document.forms["myForm"]["email"].value
+//     // var phone = document.forms["myForm"]["phone"].value;
 
+//     if (name === "") {
+//       alert("Name must be filled out");
+//       return false;
+//     } else {
+//         alert("Email or Phone no must be filled out")
+//         return false;
+//     }
+//   }
 
 
 
 function Form() {
 
     function sendEmail(e) {
+    
       e.preventDefault();
   
       emailjs.sendForm('service_e6j9eho', 'template_m7cz7x6', e.target, 'user_hnoVKOBKOpwcVV4rYrQUB')
         .then((result) => {
-            console.log(result.text);
+            document.querySelector('.success__message').style.display = 'block';
         }, (error) => {
-            console.log(error.text);
+            document.querySelector('.failure__message').style.display = 'block';
         });
         e.target.reset()
     }
   
     return (
-        <form className='form contact-form' onSubmit={sendEmail}>
+        <form className='form contact-form myForm' onSubmit={sendEmail}>
             <Input className='inp' placeholder='Name' variant="outlined" type="text" name="name"/>
             <br/> <br/><br/>
             <Input className='inp' placeholder='Email' type="text" name="email"/>
@@ -98,7 +110,9 @@ function Contact() {
                     <h1>Send Us a Message</h1>
                     <p>We will reach to you as soon as possible</p>
                     <br/><br/> <br/>
-                    <Form />
+                    <Form /> <br/> 
+                   <small className='success__message'>Thanks for sending us your message. <br/> We will reach to you as soon as possible.</small>
+                   <small className='failure__message'>Sorry. Something went wrong while sending the message <br/> Please Try again later.</small>
                 </div>
             </div>
         </div>

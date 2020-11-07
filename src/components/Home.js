@@ -4,32 +4,104 @@ import product1 from './photos/Products/p1.JPG';
 import product2 from './photos/Products/p5.JPG';
 import product3 from './photos/Products/p3.JPG';
 import product4 from './photos/Products/p9.JPG';
+import Particles from "react-tsparticles";
+
+
+
 
 
 function Home() {
     return <div id='home'>
         <div className='home'>
 
+            
+        <Particles
+        className="particles__bg"
+        height="800px"
+        id="tsparticles"
+        options={{
+          background: {
+            color: {
+              value: "#1a1b1c",
+            },
+          },
+          fpsLimit: 60,
+          interactivity: {
+            detectsOn: "canvas",
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              bubble: {
+                distance: 400,
+                duration: 2,
+                opacity: 0.8,
+                size: 40,
+              },
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: true,
+              opacity: 0.5,
+              width: 1,
+            },
+            collisions: {
+              enable: true,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outMode: "bounce",
+              random: false,
+              speed: 6,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              random: true,
+              value: 5,
+            },
+          },
+          detectRetina: true,
+        }}
+      />
         <div class="home__heading">
             <h1>Established in the year 2000, ‘Volt-Amp Logic Controls’ is a trusted business entity engaged in manufacturing and supplying Electronic Instruments.</h1>
             <button className='home__whitebtn' href='/contact-us'>CONTACT US</button>
         </div>
-
-
-        <div class="area" >
-            <div class="circles">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>         
-            </div>
-        </div >
 
 
     
@@ -73,7 +145,7 @@ function Home() {
                 </div>
                 <div className='home__product'>
                     <img src={product4} alt=''/>
-                    <p>Electronic Instruments</p>
+                    <p>Real Time Switches</p>
                 </div>
             </div>
                 <button className='home__blackbtn'>EXPLORE OUR PRODUCTS</button>

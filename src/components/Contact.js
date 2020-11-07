@@ -6,7 +6,55 @@ import MailIcon from '@material-ui/icons/Mail';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
-import contactSide from './photos/contactSide.jpg'
+import Snackbar from '@material-ui/core/Snackbar';
+import contactSide from './photos/contactSide.jpg';
+import emailjs from 'emailjs-com';
+
+
+
+
+
+function Form() {
+
+    function sendEmail(e) {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_e6j9eho', 'template_m7cz7x6', e.target, 'user_hnoVKOBKOpwcVV4rYrQUB')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
+    }
+  
+    return (
+        <form className='form contact-form' onSubmit={sendEmail}>
+            <Input className='inp' placeholder='Name' variant="outlined" type="text" name="name"/>
+            <br/> <br/><br/>
+            <Input className='inp' placeholder='Email' type="text" name="email"/>
+            <br/><br/><br/> 
+            <Input className='inp' placeholder='Phone' type="text" name="phone"/>
+            <br/><br/><br/>
+            <Input className='inp' placeholder='Message' type="text" name="message"/>
+            <br/><br/><br/>
+            <Button variant="contained" color="default" type='submit'>Submit</Button>
+        </form>
+    //   <form className="contact-form" onSubmit={sendEmail}>
+    //     <input type="text" name="phone" />
+    //     <label>Name</label>
+    //     <input type="text" name="name" />
+    //     <label>Email</label>
+    //     <input type="email" name="email" />
+    //     <label>Message</label>
+    //     <textarea name="message" />
+    //     <input type="submit" value="Send" />
+    //   </form>
+    );
+  }
+
+
+
 
 function Contact() {
     return (
@@ -50,17 +98,7 @@ function Contact() {
                     <h1>Send Us a Message</h1>
                     <p>We will reach to you as soon as possible</p>
                     <br/><br/> <br/>
-                    <form className='form'>
-                        <Input className='inp' placeholder='Name' variant="outlined" type="text" style={{}}/>
-                        <br/> <br/><br/>
-                        <Input className='inp' placeholder='Email' type="text" name="" style={{}}/>
-                        <br/><br/><br/> 
-                        <Input className='inp' placeholder='Phone' type="text" name=""  style={{}}/>
-                        <br/><br/><br/>
-                        <Input className='inp' placeholder='Message' type="text" name="" style={{}}/>
-                        <br/><br/><br/>
-                        <Button variant="contained" color="default">Submit</Button>
-                    </form>
+                    <Form />
                 </div>
             </div>
         </div>
@@ -69,4 +107,15 @@ function Contact() {
 
 export default Contact;
 
-// , color:'#99ACC2'
+
+
+
+
+
+
+
+
+
+
+
+

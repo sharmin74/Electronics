@@ -1,5 +1,10 @@
 .products {
     margin-top: 150px;
+    text-align: center;
+}
+
+.products h1 {
+    text-align: center;
 }
 
 .products__row {

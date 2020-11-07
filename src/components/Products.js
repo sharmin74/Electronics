@@ -18,66 +18,66 @@ function Products() {
             <div className='products__row'>
                 <div className='products__col'>
                     <img src={p1} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Digital Panel Meters</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
                 <div className='products__col'>
                     <img src={p2} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Digital Panel Meters</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
                 <div className='products__col'>
                     <img src={p3} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Timers</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
                 <div className='products__col'>
                     <img src={p4} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Timers</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
             </div>
             <div className='products__row'>
                 <div className='products__col'>
                     <img src={p5} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Timers</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
                 <div className='products__col'>
                     <img src={p6} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Timers</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
                 <div className='products__col'>
                     <img src={p7} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Timers</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
                 <div className='products__col'>
                     <img src={p8} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Timers</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
             </div>
             <div className='products__row'>
                 <div className='products__col'>
                     <img src={p9} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Real Time Switches</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
                 <div className='products__col'>
                     <img src={p2} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Digital Panel Meters</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
                 <div className='products__col'>
                     <img src={p3} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Timers</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
                 <div className='products__col'>
                     <img src={p4} alt="product"/>
-                    <h4>Name</h4>
+                    <h4>Universal Timers</h4>
                     <Button variant="contained" color="default">Read more</Button>
                 </div>
             </div>

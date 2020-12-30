@@ -1,9 +1,9 @@
 import React from 'react';
 import './Home.css';
-import product1 from './photos/Products/p1.JPG';
-import product2 from './photos/Products/p5.JPG';
-import product3 from './photos/Products/p3.JPG';
-import product4 from './photos/Products/p9.JPG';
+import product1 from './photos/frotterimgs/img1.jpeg';
+import product2 from './photos/frotterimgs/img2.jpeg';
+import product3 from './photos/frotterimgs/img3.jpeg';
+import product4 from './photos/frotterimgs/img4.jpeg';
 import Particles from "react-tsparticles";
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
@@ -135,11 +135,11 @@ function Home() {
             <div className='home__prodContainer'>
                 <div className='home__product'>
                     <img src={product1} alt=''/>
-                    <p>Universal Digital Panel Meters</p>            
+                    <p>Liquid Detergent</p>            
                 </div>
                 <div className='home__product'>
                     <img src={product2} alt=''/>
-                    <p>Electronic Timers</p>
+                    <p>Dish Wash and Slab Gel</p>
                 </div>
                 <div className='home__product'>
                     <img src={product3} alt=''/>

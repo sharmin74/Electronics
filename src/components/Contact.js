@@ -26,6 +26,9 @@ function validateForm(e) {
     }
   }
 
+  
+
+  
 
 
 
@@ -87,7 +90,7 @@ function Contact() {
                     <span><LocationOnIcon style={{ fontSize: 50 }} /></span> 
                     <h3>Where can you find Us</h3>
                     <p>
-                        Volt-Amp Logic Controls
+                        Volt-Amp Logic Controls 
                         221, Shree Krishna Ind Estate
                         Near Dahisar Toll Plaza, Dahisar (E)
                         Mumbai-68

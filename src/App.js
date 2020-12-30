@@ -5,6 +5,8 @@ import About from './components/About'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Contact from './components/Contact';
 import Products from './components/Products';
+import Homecare from './components/Homecare';
+import Bottles from './components/Bottles';
 import Home from './components/Home';
 import SideDrawer from './components/SideDrawer';
 import  Backdrop from './Backdrop';
@@ -37,6 +39,14 @@ function App() {
                 <Route path='/products'>
                     <Navbar click={setDrawer} />
                     <Products />
+                </Route>
+                <Route path='/bottles'>
+                    <Navbar click={setDrawer} />
+                    <Bottles />
+                </Route>
+                <Route path='/homecare'>
+                    <Navbar click={setDrawer} />
+                    <Homecare />
                 </Route>
                 <Route path='/contact-us'>
                     <Navbar click={setDrawer} />
